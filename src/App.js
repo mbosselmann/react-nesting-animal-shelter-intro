@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./styles.css";
 
 function Animal({ emoji, name, description }) {
   return (
-    <>
+    <Fragment>
       <h2>
         {emoji} {name}
       </h2>
@@ -11,7 +11,7 @@ function Animal({ emoji, name, description }) {
       <Button type="button">
         Adopt <strong>{name}</strong>
       </Button>
-    </>
+    </Fragment>
   );
 }
 
